@@ -1,5 +1,15 @@
 # HorizonXI-ttimers<br>
-tTimers addon fix for hXI private server:<br><br>
+tTimers addon fix for hXI private server:<br>
+<br>
+[Linktr.ee Socials](https://linktr.ee/zanzah)<br>
+Your support is appreciated!<br>
+[Donate via PayPal](https://www.paypal.com/donate/?hosted_button_id=ZJBZDWWWREULU)<br>
+[Donate via Ko-fi](https://ko-fi.com/zanzah_z)<br>
+====================<br>
+<br>
+Editor: Zanzah<br>
+Website: [Zanzah.com](https://www.Zanzah.com)<br>
+<br>
 [pRealTime null pointer dereference]:<br>
 The addon uses a broken memory pattern scan (ashita.memory.find) to locate FFXI's real-time clock in FFXiMain.dll. hXI's Client is modified so that this scan can return 0 (not found). Code tries to dereference that null pointer inside CalculateBuffDuration(), which is called every time a buff packet arrives.<br>
 Fix: <br>
